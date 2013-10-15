@@ -16,7 +16,7 @@ Usage
     >>> text = """I'm going to go get WR for WindWaker HD Kappa"""
     >>> html = markdown.markdown(text, ["twitchmoticons"])
     >>> print(html)
-    <p>I'm going to go get WR for WindWaker HD <img src="http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-ddc6e3a8732cb50f-25x28.png" /></p>
+    <p>I'm going to go get WR for WindWaker HD <img class="tw_emote" src="http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-ddc6e3a8732cb50f-25x28.png" /></p>
 
     ### Custom settings
 
@@ -30,7 +30,7 @@ Usage
     ...     ]}
     ... )
     >>> print(html)
-    <p>I'm going to go get WR for <img src="http://static.example.com/WindWaker.jpg" /> HD Kappa</p>
+    <p>I'm going to go get WR for <img class="tw_emote" src="http://static.example.com/WindWaker.jpg" /> HD Kappa</p>
 
 Dependencies
 ------------
@@ -58,6 +58,7 @@ class EmoticonPattern(Pattern):
             self.emoticons.getConfig("EMOTICONS")[emote]
         )
         img.set("src", img_location)
+        img.set("class", "tw_emote")
         return img
 
 
