@@ -90,7 +90,7 @@ class TwitchmoticonExtension(markdown.Extension):
 
     def extendMarkdown(self, md, md_globals):
         self.md = md
-        EMOTE_RE = r"(?<![^^\/ ])(?P<emote>%s)" % "|".join(
+        EMOTE_RE = r"(?<![^^/ ])(?P<emote>%s)" % "|".join(
             [re.escape(face) for face in self.getConfig("EMOTICONS").keys()]
         )
         md.inlinePatterns.add("emoticons", EmoticonPattern(EMOTE_RE, self), "<not_strong")

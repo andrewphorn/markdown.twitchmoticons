@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='mdx_twitchmoticons',
-    version='1.2',
+    version='1.3',
     author='Andrew Horn',
     author_email='andrewphorn@gmail.com',
     description='Python-Markdown extension to support Twitch.tv-style emoticons.',
