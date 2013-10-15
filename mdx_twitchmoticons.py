@@ -66,9 +66,16 @@ class TwitchmoticonExtension(markdown.Extension):
         self.config = {
             "EMOTICONS": [
                 {
-                    "Kappa"   : "chansub-global-emoticon-ddc6e3a8732cb50f-25x28.png",
-                    "Keepo"   : "chansub-global-emoticon-8eed21805f6217ce-27x29.png",
-                    "FrankerZ": "chansub-global-emoticon-3b96527b46b1c941-40x30.png"
+                    "Kappa"     : "chansub-global-emoticon-ddc6e3a8732cb50f-25x28.png",
+                    "Keepo"     : "chansub-global-emoticon-8eed21805f6217ce-27x29.png",
+                    "FrankerZ"  : "chansub-global-emoticon-3b96527b46b1c941-40x30.png",
+                    "RalpherZ"  : "chansub-global-emoticon-3d9b59b17687288c-33x30.png",
+                    "WinWaker"  : "chansub-global-emoticon-d4e971f7a6830e95-30x30.png",
+                    "SSSsss"    : "chansub-global-emoticon-5d019b356bd38360-24x24.png",
+                    "BibleThump": "chansub-global-emoticon-f6c13c7fc0a5c93d-36x30.png",
+                    ":)"        : "chansub-global-emoticon-ebf60cd72f7aa600-24x18.png",
+                    ";)"        : "chansub-global-emoticon-cfaf6eac72fe4de6-24x18.png",
+                    ":D"        : "chansub-global-emoticon-9f2ac5d4b53913d7-24x18.png"
                 },
                 "A mapping of emoticon codes to image names."
             ],
